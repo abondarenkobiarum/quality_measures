@@ -1,0 +1,174 @@
+.worklist {
+  &.flex-row {
+    display: flex;
+    min-height: ~"calc(100vh - 55px)";
+    .h1 {
+      text-transform: uppercase;
+      color: #28384B;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    .h2 {
+      color: #3D454F;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .left-side {
+      width: 24%;
+      padding: 15px 20px;
+      box-sizing: border-box;
+      flex: none;
+      background-color: #F2F4FF;
+      border-right: 1px solid #E8E8E8;
+      height: ~"calc(100vh - 55px)";
+      overflow: auto;
+      .text-filter {
+        margin-bottom: 35px;
+        input {
+          border: 1px solid #3F4252;
+          background-color: #FFFFFF;
+          width: 100%;
+          font-size: 14px;
+          color: #3F4252;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 10px;
+          box-sizing: border-box;
+        }
+      }
+      .more {
+        color: #828BD3;
+        font-size: 13px;
+        font-weight: 600;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        text-align: left;
+        padding: 0;
+        margin-top: 5px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .checkboxes {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        label {
+          display: flex;
+          align-content: center;
+          align-items: center;
+          font-size: 14px;
+          color: #5E5E5E;
+          margin-bottom: 5px;
+          input {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+    .right-side {
+      padding: 30px 55px 30px 40px;
+      box-sizing: border-box;
+      width: 76%;
+      flex: none;
+      background-color: #fff;
+      height: ~"calc(100vh - 55px)";
+      overflow: auto;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        align-items: center;
+        .results {
+          color: #5E5E5E;
+          font-size: 14px;
+        }
+        .analytics-btn {
+          border: none;
+          font-size: 13px;
+          font-weight: 600;
+          padding: 0 18px;
+          height: 26px;
+          color: #FFFFFF;
+          background-color: #828BD3;
+          line-height: 26px;
+        }
+      }
+      .table-part {
+        width: 100%;
+        table {
+          width: 100%;
+          border-spacing: 0;
+          border: 1px solid #CCCCCC;
+          tr th {
+            background-color: #E4E4E4;
+            padding: 7px 11px;
+            border-bottom: 1px solid #CCCCCC;
+            border-right: 1px solid #CCCCCC;
+            text-align: left;
+            font-weight: 600;
+            color: #5E5E5E;
+            font-size: 13px;
+            &:last-child {
+              border-right: none;
+            }
+          }
+          tr {
+            td {
+              color: #5E5E5E;
+              font-size: 14px;
+              padding: 7px 11px;
+              border-bottom: 1px solid #CCCCCC;
+              border-right: 1px solid #CCCCCC;
+              &:last-child {
+                border-right: none;
+                padding: 0;
+              }
+              .guidelines {
+                padding: 12px 11px;
+                &-line {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  font-size: 14px;
+                  .status {
+                    font-style: italic;
+                    color: #9B9B9B;
+                  }
+                  .header {
+                    margin: 0;
+                    color: #5E5E5E;
+                  }
+                }
+              }
+              .documents {
+                .highlighted span{
+                  background-color: #F8E71C;
+                }
+              }
+              .continue {
+                border-top: 1px solid #CCCCCC;
+                padding: 6px 27px;
+                text-align: right;
+                a {
+                  color: #828BD3;
+                  font-weight: 600;
+                  font-size: 12px;
+                  &:hover {
+                    opacity: 0.8;
+                  }
+                }
+              }
+            }
+            &:last-child td {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
