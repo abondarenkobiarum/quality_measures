@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cases</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="settings.css"/>
+
+</head>
+<body>
+<header>
+    <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+    <div class="breadcrumbs">
+        <a href="#" class="breadcrumbs__element">Settings</a>
+    </div>
+    <div class="settings">
+        <a href="#"><i class="icon icon-settings-large"></i></a>
+    </div>
+</header>
+<div class="settings flex-row">
+    <div class="left-side">
+        <div class="radio-part">
+            <div class="h1">Data Source</div>
+            <div class="radio">
+                <label for="pull-data"><input type="radio" name="data-source" id="pull-data">Pull data from Edge Gateway</label>
+                <label for="load-data"><input type="radio" name="data-source" id="load-data">Direct data load from Caché</label>
+                <label for="service"><input type="radio" name="data-source" id="service">Use SMART on FHIR service</label>
+            </div>
+        </div>
+        <div class="input-part">
+            <label class="h2" for="server-ip">
+                Server IP address (including port)
+            </label>
+            <input type="text" id="server-ip" value="localhost: 5772">
+        </div>
+        <div class="input-part">
+            <label class="h2" for="app-path">
+                Service web application path
+            </label>
+            <input type="text" id="app-path" value="/csp/healthshare/edge1/services">
+        </div>
+        <div class="two-inputs">
+            <div class="input-part">
+                <label class="h2" for="username">
+                    Username
+                </label>
+                <input type="text" id="username" value="Gabriel">
+            </div>
+            <div class="input-part">
+                <label class="h2" for="password">
+                    Password
+                </label>
+                <input type="text" id="password" value="*****">
+            </div>
+        </div>
+        <div class="table-part">
+            <div class="h1">Processing Steps</div>
+            <table>
+                <thead>
+                <tr>
+                    <th>Phase</th>
+                    <th colspan="3">Plugin</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Feature Extraction</td>
+                    <td>
+                        iKnow (entities)
+                        <div class="arrow-part">
+                            <i class="icon icon-arrow-down-tale blue"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <i class="icon icon-settings settings"></i>
+                    </td>
+                    <td>
+                        <i class="icon icon-minus delete"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Data Normalization</td>
+                    <td>
+                        UMLS
+                        <div class="arrow-part">
+                            <i class="icon icon-arrow-up-tale"></i>
+                            <i class="icon icon-arrow-down-tale blue"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <i class="icon icon-settings settings"></i>
+                    </td>
+                    <td>
+                        <i class="icon icon-minus delete"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Annotation</td>
+                    <td>
+                        Rule
+                        <div class="arrow-part">
+                            <i class="icon icon-arrow-up-tale"></i>
+                            <i class="icon icon-arrow-down-tale blue"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <i class="icon icon-settings settings"></i>
+                    </td>
+                    <td>
+                        <i class="icon icon-minus delete"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Annotation</td>
+                    <td>
+                        Read SDA model
+                        <div class="arrow-part">
+                            <i class="icon icon-arrow-up-tale"></i>
+                            <i class="icon icon-arrow-down-tale blue"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <i class="icon icon-settings settings"></i>
+                    </td>
+                    <td>
+                        <i class="icon icon-minus delete"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Statistical Model</td>
+                    <td>
+                        LIBSVM
+                        <div class="arrow-part">
+                            <i class="icon icon-arrow-up-tale"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <i class="icon icon-settings settings"></i>
+                    </td>
+                    <td>
+                        <i class="icon icon-minus delete"></i>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <button class="icon-text-btn add"><i class="icon icon-plus"></i>Add Plugin</button>
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="table-part">
+            <div class="header">
+                <div class="left-part">
+                    <div class="h1">Data Filtering</div>
+                </div>
+                <div class="right-part">
+                    <button class="icon-text-btn load"><i class="icon icon-load-file"></i>Load from file</button>
+                </div>
+            </div>
+            <table>
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Patient #</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Notes</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005774</td>
+                    <td>22</td>
+                    <td>Male</td>
+                    <td>63</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005775</td>
+                    <td>42</td>
+                    <td>Female</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005776</td>
+                    <td>38</td>
+                    <td>Male</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005777</td>
+                    <td>27</td>
+                    <td>Female</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005778</td>
+                    <td>32</td>
+                    <td>Male</td>
+                    <td>1</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="footer">
+                <div class="left-part">
+                    <button class="icon-text-btn add"><i class="icon icon-plus"></i>Add Row</button>
+                    <button class="icon-text-btn delete"><i class="icon icon-minus"></i>Delete Row</button>
+                </div>
+                <div class="right-part">
+                    <div class="pages">1-7/41</div>
+                    <div class="pagination">
+                        <button class="icon-btn left"><i class="icon icon-arrow-right"></i></button>
+                        <button class="icon-btn right"><i class="icon icon-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-part">
+            <div class="header">
+                <div class="left-part">
+                    <div class="h1">Training set</div>
+                </div>
+                <div class="right-part">
+                    <button class="icon-text-btn load"><i class="icon icon-load-file"></i>Load from file</button>
+                </div>
+            </div>
+            <table>
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Patient #</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Notes</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005774</td>
+                    <td>22</td>
+                    <td>Male</td>
+                    <td>63</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005775</td>
+                    <td>42</td>
+                    <td>Female</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005776</td>
+                    <td>38</td>
+                    <td>Male</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005777</td>
+                    <td>27</td>
+                    <td>Female</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005778</td>
+                    <td>32</td>
+                    <td>Male</td>
+                    <td>1</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="footer">
+                <div class="left-part">
+                    <button class="icon-text-btn add"><i class="icon icon-plus"></i>Add Row</button>
+                    <button class="icon-text-btn delete"><i class="icon icon-minus"></i>Delete Row</button>
+                </div>
+                <div class="right-part">
+                    <div class="pages">1-7/41</div>
+                    <div class="pagination">
+                        <button class="icon-btn left"><i class="icon icon-arrow-right"></i></button>
+                        <button class="icon-btn right"><i class="icon icon-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-part">
+            <div class="header">
+                <div class="left-part">
+                    <div class="h1">Test set</div>
+                </div>
+                <div class="right-part">
+                    <button class="icon-text-btn load"><i class="icon icon-load-file"></i>Load from file</button>
+                </div>
+            </div>
+            <table>
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Patient #</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Notes</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005774</td>
+                    <td>22</td>
+                    <td>Male</td>
+                    <td>63</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005775</td>
+                    <td>42</td>
+                    <td>Female</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005776</td>
+                    <td>38</td>
+                    <td>Male</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005777</td>
+                    <td>27</td>
+                    <td>Female</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#1005778</td>
+                    <td>32</td>
+                    <td>Male</td>
+                    <td>1</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="footer">
+                <div class="left-part">
+                    <button class="icon-text-btn add"><i class="icon icon-plus"></i>Add Row</button>
+                    <button class="icon-text-btn delete"><i class="icon icon-minus"></i>Delete Row</button>
+                </div>
+                <div class="right-part">
+                    <div class="pages">1-7/41</div>
+                    <div class="pagination">
+                        <button class="icon-btn left"><i class="icon icon-arrow-right"></i></button>
+                        <button class="icon-btn right"><i class="icon icon-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -2,6 +2,9 @@
 
 @icomoon-font-path: "icons";
 
+@icon-load-file: "\e909";
+@icon-arrow-down-tale: "\e90a";
+@icon-arrow-up-tale: "\e90b";
 @icon-aluna-logo: "\e900";
 @icon-arrow-down: "\e901";
 @icon-arrow-right: "\e902";
@@ -14,11 +17,11 @@
 
 @font-face {
   font-family: 'icons';
-  src:  url('@{icomoon-font-path}/icons.eot?l7wacq');
-  src:  url('@{icomoon-font-path}/icons.eot?l7wacq#iefix') format('embedded-opentype'),
-  url('@{icomoon-font-path}/icons.ttf?l7wacq') format('truetype'),
-  url('@{icomoon-font-path}/icons.woff?l7wacq') format('woff'),
-  url('@{icomoon-font-path}/icons.svg?l7wacq#icons') format('svg');
+  src:  url('@{icomoon-font-path}/icons.eot?bjix29');
+  src:  url('@{icomoon-font-path}/icons.eot?bjix29#iefix') format('embedded-opentype'),
+  url('@{icomoon-font-path}/icons.ttf?bjix29') format('truetype'),
+  url('@{icomoon-font-path}/icons.woff?bjix29') format('woff'),
+  url('@{icomoon-font-path}/icons.svg?bjix29#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -38,6 +41,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-load-file {
+  &:before {
+    content: @icon-load-file;
+  }
+}
+.icon-arrow-down-tale {
+  &:before {
+    content: @icon-arrow-down-tale;
+  }
+}
+.icon-arrow-up-tale {
+  &:before {
+    content: @icon-arrow-up-tale;
+  }
+}
 .icon-aluna-logo {
   &:before {
     content: @icon-aluna-logo;
@@ -83,7 +101,6 @@
     content: @icon-settings-large;
   }
 }
-
 
 
 html {

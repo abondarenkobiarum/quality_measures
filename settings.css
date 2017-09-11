@@ -1,0 +1,298 @@
+.settings.flex-row {
+  display: flex;
+}
+.settings .h1 {
+  color: #3D454F;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.settings .h2 {
+  color: #5E5E5E;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.settings input {
+  padding: 6px 11px;
+  font-size: 14px;
+  color: #5E5E5E;
+  border: 1px solid #CCCCCC;
+  outline: none;
+}
+.settings input:hover,
+.settings input:focus,
+.settings input:active {
+  border: 1px solid #828BD3;
+}
+.settings table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid #CCCCCC;
+}
+.settings table thead tr th {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5E5E5E;
+  text-align: left;
+  padding: 6px 0 6px 11px;
+  background-color: #fff;
+  border-bottom: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+}
+.settings table thead tr th:last-child {
+  border-right: none;
+}
+.settings table tbody tr td {
+  border-bottom: 1px solid #CCCCCC;
+  background-color: #fff;
+  color: #5E5E5E;
+  font-size: 14px;
+  padding: 6px 11px 6px 11px;
+  border-right: 1px solid #CCCCCC;
+}
+.settings table tbody tr td:last-child {
+  border-right: none;
+}
+.settings table tbody tr:last-child td {
+  border-bottom: none;
+}
+.settings table tbody tr:hover td {
+  background-color: #F5F4F3;
+}
+.settings .icon-text-btn {
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-size: 14px;
+  color: #5E5E5E;
+}
+.settings .icon-text-btn:hover {
+  opacity: 0.8;
+}
+.settings .icon-text-btn i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.settings .icon-text-btn.add i {
+  color: #828BD3;
+}
+.settings .icon-text-btn.delete i {
+  color: #DB5570;
+}
+.settings .icon-text-btn.load {
+  font-size: 13px;
+  font-weight: 600;
+  color: #828BD3;
+}
+.settings .icon-text-btn.load i {
+  color: #5E5E5E;
+  font-size: 16px;
+  font-weight: normal;
+}
+.settings .left-side {
+  background-color: #F6F6F6;
+  width: 45%;
+  flex: none;
+  box-sizing: border-box;
+  padding: 30px 65px 55px;
+}
+.settings .left-side .radio-part {
+  padding-bottom: 25px;
+}
+.settings .left-side .radio-part .radio {
+  display: flex;
+  flex-direction: column;
+}
+.settings .left-side .radio-part .radio label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #5E5E5E;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+.settings .left-side .radio-part .radio label:last-child {
+  margin-bottom: 0;
+}
+.settings .left-side .radio-part .radio input {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.settings .left-side .input-part {
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.settings .left-side .two-inputs {
+  display: flex;
+  flex-direction: row;
+}
+.settings .left-side .two-inputs .input-part {
+  width: 50%;
+}
+.settings .left-side .two-inputs .input-part:first-child {
+  margin-right: 25px;
+}
+.settings .left-side .table-part {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+.settings .left-side .table-part table {
+  margin-bottom: 20px;
+}
+.settings .left-side .table-part table tbody tr td {
+  padding: 6px 0 6px 11px;
+}
+.settings .left-side .table-part table tbody tr td:nth-child(3),
+.settings .left-side .table-part table tbody tr td:nth-child(4) {
+  width: 32px;
+  padding: 6px 0 4px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.settings .left-side .table-part table tbody tr td:nth-child(3) i,
+.settings .left-side .table-part table tbody tr td:nth-child(4) i {
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 3px;
+}
+.settings .left-side .table-part table tbody tr td:nth-child(3) i.settings,
+.settings .left-side .table-part table tbody tr td:nth-child(4) i.settings {
+  color: #5E5E5E;
+}
+.settings .left-side .table-part table tbody tr td:nth-child(3) i.delete,
+.settings .left-side .table-part table tbody tr td:nth-child(4) i.delete {
+  color: #DB5570;
+}
+.settings .left-side .table-part table tbody tr td:nth-child(3) i:hover,
+.settings .left-side .table-part table tbody tr td:nth-child(4) i:hover {
+  opacity: 0.8;
+}
+.settings .left-side .table-part table tbody tr td .arrow-part {
+  float: right;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-right: 6px;
+  width: 26px;
+  height: 100%;
+  justify-content: space-around;
+}
+.settings .left-side .table-part table tbody tr td .arrow-part i {
+  font-size: 16px;
+  cursor: pointer;
+}
+.settings .left-side .table-part table tbody tr td .arrow-part i:hover {
+  opacity: 0.8;
+}
+.settings .left-side .table-part table tbody tr td .arrow-part .blue {
+  color: #4990E2;
+}
+.settings .left-side .table-part table tbody tr:hover td {
+  background-color: #F5F4F3;
+}
+.settings .left-side .table-part table tbody tr:hover td:nth-child(3),
+.settings .left-side .table-part table tbody tr:hover td:nth-child(4) {
+  background-color: #fff;
+}
+.settings .right-side {
+  width: 55%;
+  flex: none;
+  box-sizing: border-box;
+  border-left: 1px solid #CCCCCC;
+  background-color: #fff;
+  padding: 30px 45px 30px 35px;
+}
+.settings .right-side .table-part {
+  border-bottom: 1px solid #EEEEEE;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
+.settings .right-side .table-part:last-child {
+  border-bottom: none;
+}
+.settings .right-side .table-part .header,
+.settings .right-side .table-part .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings .right-side .table-part .header .h1,
+.settings .right-side .table-part .footer .h1 {
+  margin: 0;
+}
+.settings .right-side .table-part .header .left-part,
+.settings .right-side .table-part .footer .left-part {
+  display: flex;
+  align-items: center;
+}
+.settings .right-side .table-part .header .left-part .add,
+.settings .right-side .table-part .footer .left-part .add {
+  margin-right: 50px;
+}
+.settings .right-side .table-part .header .right-part,
+.settings .right-side .table-part .footer .right-part {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.settings .right-side .table-part .header .right-part .pages,
+.settings .right-side .table-part .footer .right-part .pages {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #5E5E5E;
+}
+.settings .right-side .table-part .header .right-part .pagination,
+.settings .right-side .table-part .footer .right-part .pagination {
+  display: flex;
+}
+.settings .right-side .table-part .header .right-part .pagination button,
+.settings .right-side .table-part .footer .right-part .pagination button {
+  box-shadow: none;
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: #828BD3;
+  padding: 8px 11px;
+  position: relative;
+  z-index: 1;
+}
+.settings .right-side .table-part .header .right-part .pagination button:first-child,
+.settings .right-side .table-part .footer .right-part .pagination button:first-child {
+  transform: rotate(180deg);
+  padding: 7px 11px 9px;
+}
+.settings .right-side .table-part .header .right-part .pagination button:last-child,
+.settings .right-side .table-part .footer .right-part .pagination button:last-child {
+  margin-left: -1px;
+}
+.settings .right-side .table-part .header .right-part .pagination button:hover,
+.settings .right-side .table-part .footer .right-part .pagination button:hover {
+  opacity: 0.8;
+  z-index: 2;
+}
+.settings .right-side .table-part table {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.settings .right-side .table-part table tr th:first-child,
+.settings .right-side .table-part table tr td:first-child {
+  width: 32px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.settings .right-side .table-part table tr th:first-child input,
+.settings .right-side .table-part table tr td:first-child input {
+  margin-top: 6px;
+}
